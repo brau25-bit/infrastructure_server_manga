@@ -6,6 +6,7 @@ Actualmente inlcuye:
 
 - PostgreSQL 17
 - Adminer para administracion de base de datos
+- RabbitMQ 
 
 ## Requisitos
 
@@ -39,4 +40,13 @@ docker compose ps
 Ver logs:
 ```bash
 docker compose logs -f 
+```
+
+## Puertos
+
+Docker tomara los puertos por defecto de cada servicio, si es necesario usar un puerto se pueden agregar mediante la opcion:
+
+```docker
+ports:
+  - "host_port:cont_port"
 ```
